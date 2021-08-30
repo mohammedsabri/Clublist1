@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="ie.wit.clublist.activities.ClublistActivity">
+
+  <com.google.android.material.appbar.AppBarLayout
+      android:id="@+id/appBarLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimary"
+      android:fitsSystemWindows="true"
+      app:elevation="0dip"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/white" />
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <LinearLayout
+      android:layout_width="412dp"
+      android:layout_height="592dp"
+      android:orientation="vertical"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/appBarLayout">
+
+    <ImageView
+        android:id="@+id/img_clublistImage"
+        android:layout_width="352dp"
+        android:layout_height="112dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/edt_clublist_title"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/hint_clublistTitle"
+        android:inputType="text"
+        android:maxLength="25"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edt_details"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/hint_clublistDetails"
+        android:inputType="text"
+        android:maxLength="25"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edt_clubvalue"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/hint_club_value"
+        android:inputType="number"
+        android:maxLength="25"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <Button
+          android:id="@+id/btn_chooseImage"
+          android:layout_width="378dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="16dp"
+          android:layout_weight="1"
+          android:background="@color/colorPrimary"
+          android:fontFamily="sans-serif-condensed-light"
+          android:padding="8dp"
+          android:text="@string/button_addImage"
+          android:textColor="@color/white"
+          android:textSize="24sp"
+          android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="381dp"
+        android:layout_height="51dp"
+        android:layout_margin="16dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-condensed-light"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:stateListAnimator="@null"
+        android:text="@string/button_addClublist"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+  </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

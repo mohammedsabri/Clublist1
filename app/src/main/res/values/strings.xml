@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Clublist</string>
+    <string name="hint_clublistTitle">Clublist Title</string>
+    <string name="hint_clublistDetails">Details </string>
+    <string name="button_addClublist">Add Clublist</string>
+    <string name="menu_addClublist">Add</string>
+    <string name="menu_cancelClublist">Cancel</string>
+    <string name="enter_clublist_title"> Please enter a Clublist Title </string>
+    <string name="save_clublist"> Save Clublist </string>
+    <string name="button_addImage"> Add Image </string>
+    <string name="select_clublist_image">Select clublist image</string>
+    <string name="change_clublist_image">Change clublist image</string>
+    <string name="button_location">Set Location</string>
+    <string name="title_activity_map">Map</string>
+    <string name="google_maps_key">AIzaSyCy8_-CqoffgkXPNVQKwO_R8VxelypVVAM</string>
+    <string name="hint_club_value">Club Value</string>
+    <string name="enter_clublist_details">Please enter the Clubhouse Details</string>
+    <string name="enter_clublist_value">Please enter the Clubhouse Value</string>
+    <string name="hint_clublistValue">Values</string>
+    <string name="menu_deleteClublist">DELETE</string>
+    <string name="title_clublist_activity">Add Clublist</string>
+</resources>
